@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <BodyPartGroupDef>
+        <defName>RG-WF_LeftHeadAttackTool</defName>
+        <label>left head</label>
+    </BodyPartGroupDef>
+
+    <BodyPartGroupDef>
+        <defName>RG-WF_RightHeadAttackTool</defName>
+        <label>right head</label>
+    </BodyPartGroupDef>
+
+</Defs>
