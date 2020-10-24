@@ -4,10 +4,11 @@
     <ThingDef ParentName="AnimalThingBase">
         <defName>RG-EAP_WoollyMammoth</defName>
         <label>woolly mammoth</label>
-        <description>placeholder</description>
+        <description>An once extinct species of elephants that was common on old earth. Mammoths have a long trunk they use to manipulate objects, sharp tusks they use to gore attackers and long fur, thick fur that allows them to live in cold regions. A dead mammoth's valuable tusks can be recovered by butchering it.</description>
         <statBases>
-            <MoveSpeed>4.2</MoveSpeed>
+            <MoveSpeed>4.5</MoveSpeed>
             <ComfyTemperatureMin>-70</ComfyTemperatureMin>
+			<ComfyTemperatureMax>15</ComfyTemperatureMax>
             <MarketValue>1500</MarketValue>
         </statBases>
         <tools>
@@ -26,7 +27,7 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>16</power>
+                <power>18</power>
                 <cooldownTime>1.65</cooldownTime>
                 <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
             </li>
@@ -35,19 +36,20 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>16</power>
+                <power>18</power>
                 <cooldownTime>1.65</cooldownTime>
                 <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
             </li>
             <li>
                 <label>head</label>
-                <cooldownTime>1.65</cooldownTime>
-                <power>14</power>
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <chanceFactor>0.01</chanceFactor>
-                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <power>14</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
             </li>
         </tools>
         <race>
@@ -55,19 +57,19 @@
             <predator>false</predator>
             <body>QuadrupedAnimalWithHoovesTusksAndTrunk</body>
             <herdMigrationAllowed>true</herdMigrationAllowed>
-            <baseHungerRate>1.9</baseHungerRate>
-            <baseBodySize>5</baseBodySize>
-            <baseHealthScale>8</baseHealthScale>
+            <baseHungerRate>2.4</baseHungerRate>
+            <baseBodySize>4.0</baseBodySize>
+            <baseHealthScale>3.9</baseHealthScale>
             <foodType>VegetarianRoughAnimal</foodType>
-            <gestationPeriodDays>40</gestationPeriodDays>
+            <gestationPeriodDays>48</gestationPeriodDays>
             <packAnimal>false</packAnimal>
-            <wildness>0.75</wildness>
-            <lifeExpectancy>90</lifeExpectancy>
+            <wildness>0.80</wildness>
+            <lifeExpectancy>60</lifeExpectancy>
             <trainability>Advanced</trainability>
-            <manhunterOnTameFailChance>0.038</manhunterOnTameFailChance>
-            <manhunterOnDamageChance>0.80</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
             <leatherDef>Leather_Heavy</leatherDef>
-            <nuzzleMtbHours>60</nuzzleMtbHours>
+            <nuzzleMtbHours>28</nuzzleMtbHours>
             <litterSizeCurve>
                 <points>
                     <li>(0.99, 0)</li>
@@ -82,11 +84,11 @@
                 </li>
                 <li>
                     <def>AnimalJuvenile</def>
-                    <minAge>1</minAge>
+                    <minAge>0.8</minAge>
                 </li>
                 <li>
                     <def>AnimalAdult</def>
-                    <minAge>4.2</minAge>
+                    <minAge>2.2</minAge>
                     <soundCall>Pawn_Elephant_Call</soundCall>
                     <soundAngry>Pawn_Elephant_Angry</soundAngry>
                     <soundWounded>Pawn_Elephant_Injured</soundWounded>
@@ -125,7 +127,7 @@
                 <labelPlural>woolly mammoth calves</labelPlural>
                 <bodyGraphicData>
                     <texPath>Things/Pawn/Animal/ExtinctWoollyMammoth/ExtinctWoollyMammothBaby</texPath>
-                    <drawSize>2.8</drawSize>
+                    <drawSize>1.8</drawSize>
                     <shadowData>
                         <volume>(0.4, 0.3, 0.3)</volume>
                         <offset>(0,0,-0.2)</offset>
@@ -133,13 +135,13 @@
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/ExtinctWoollyMammoth/dessicated_ExtinctWoollyMammothBaby_east</texPath>
-                    <drawSize>2.6</drawSize>
+                    <drawSize>1.6</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
                     <texPath>Things/Pawn/Animal/ExtinctWoollyMammoth/ExtinctWoollyMammothM</texPath>
-                    <drawSize>3.6</drawSize>
+                    <drawSize>2.6</drawSize>
                     <shadowData>
                         <volume>(0.8, 0.6, 0.6)</volume>
                         <offset>(0,0,-0.3)</offset>
@@ -147,15 +149,15 @@
                 </bodyGraphicData>
                 <femaleGraphicData>
                     <texPath>Things/Pawn/Animal/ExtinctWoollyMammoth/ExtinctWoollyMammothF</texPath>
-                    <drawSize>3.4</drawSize>
+                    <drawSize>2.4</drawSize>
                 </femaleGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/ExtinctWoollyMammoth/dessicated_ExtinctWoollyMammothM_east</texPath>
-                    <drawSize>3.4</drawSize>
+                    <drawSize>2.4</drawSize>
                 </dessicatedBodyGraphicData>
                 <femaleDessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/ExtinctWoollyMammoth/dessicated_ExtinctWoollyMammothF_east</texPath>
-                    <drawSize>3.2</drawSize>
+                    <drawSize>2.2</drawSize>
                 </femaleDessicatedBodyGraphicData>
                 <butcherBodyPart>
                     <bodyPartGroup>TuskAttackTool</bodyPartGroup>
@@ -166,7 +168,7 @@
             <li>
                 <bodyGraphicData>
                     <texPath>Things/Pawn/Animal/ExtinctWoollyMammoth/ExtinctWoollyMammothM</texPath>
-                    <drawSize>4.8</drawSize>
+                    <drawSize>3.8</drawSize>
                     <shadowData>
                         <volume>(0.8, 0.6, 0.6)</volume>
                         <offset>(0,0,-0.3)</offset>
@@ -174,15 +176,15 @@
                 </bodyGraphicData>
                 <femaleGraphicData>
                     <texPath>Things/Pawn/Animal/ExtinctWoollyMammoth/ExtinctWoollyMammothF</texPath>
-                    <drawSize>4.4</drawSize>
+                    <drawSize>3.4</drawSize>
                 </femaleGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/ExtinctWoollyMammoth/dessicated_ExtinctWoollyMammothM_east</texPath>
-                    <drawSize>4.6</drawSize>
+                    <drawSize>3.6</drawSize>
                 </dessicatedBodyGraphicData>
                 <femaleDessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/ExtinctWoollyMammoth/dessicated_ExtinctWoollyMammothF_east</texPath>
-                    <drawSize>4.2</drawSize>
+                    <drawSize>3.2</drawSize>
                 </femaleDessicatedBodyGraphicData>
                 <butcherBodyPart>
                     <bodyPartGroup>TuskAttackTool</bodyPartGroup>
@@ -198,10 +200,11 @@
     <ThingDef ParentName="AnimalThingBase">
         <defName>RG-EAP_WoollyRhino</defName>
         <label>woolly rhino</label>
-        <description>placeholder</description>
+        <description>An once extinct species of rhinoceros that was common on old earth. Its long fur allows it to live even in the coldest regions in small herds. Its massive strength and sharp horn make it a brutal opponent.</description>
         <statBases>
             <MoveSpeed>4.6</MoveSpeed>
-            <ComfyTemperatureMin>-85</ComfyTemperatureMin>
+            <ComfyTemperatureMin>-75</ComfyTemperatureMin>
+			<ComfyTemperatureMax>15</ComfyTemperatureMax>
             <MarketValue>1300</MarketValue>
         </statBases>
         <tools>
@@ -209,17 +212,25 @@
                 <label>horn</label>
                 <capacities>
                     <li>Scratch</li>
-                    <li>Stab</li>
                 </capacities>
-                <power>20</power>
+                <power>19</power>
                 <cooldownTime>1.7</cooldownTime>
+                <linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>horn</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>19</power>
+                <cooldownTime>2</cooldownTime>
                 <linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
             </li>
             <li>
                 <capacities>
                     <li>Bite</li>
                 </capacities>
-                <power>14</power>
+                <power>18</power>
                 <cooldownTime>1.8</cooldownTime>
                 <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
             </li>
@@ -228,30 +239,32 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>12</power>
-                <cooldownTime>1.7</cooldownTime>
+                <power>16</power>
+                <cooldownTime>2</cooldownTime>
                 <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
                 <chanceFactor>0.2</chanceFactor>
             </li>
         </tools>
         <race>
-            <herdAnimal>true</herdAnimal>
-            <predator>false</predator>
             <body>QuadrupedAnimalWithHoovesAndHorn</body>
-            <herdMigrationAllowed>true</herdMigrationAllowed>
             <baseHungerRate>1.8</baseHungerRate>
-            <baseBodySize>4</baseBodySize>
-            <baseHealthScale>6.5</baseHealthScale>
+            <baseBodySize>3.0</baseBodySize>
+            <baseHealthScale>3.8</baseHealthScale>
+            <herdMigrationAllowed>true</herdMigrationAllowed>
             <foodType>VegetarianRoughAnimal</foodType>
             <gestationPeriodDays>40</gestationPeriodDays>
             <packAnimal>false</packAnimal>
-            <wildness>0.80</wildness>
-            <lifeExpectancy>60</lifeExpectancy>
+            <wildness>0.90</wildness>
+            <lifeExpectancy>45</lifeExpectancy>
             <trainability>Advanced</trainability>
-            <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
-            <manhunterOnDamageChance>1</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
             <leatherDef>Leather_Heavy</leatherDef>
-            <nuzzleMtbHours>45</nuzzleMtbHours>
+			<nameOnTameChance>1</nameOnTameChance>
+            <herdAnimal>true</herdAnimal>
+            <predator>false</predator>
+			<nuzzleMtbHours>28</nuzzleMtbHours>
             <litterSizeCurve>
                 <points>
                     <li>(0.99, 0)</li>
@@ -266,11 +279,11 @@
                 </li>
                 <li>
                     <def>AnimalJuvenile</def>
-                    <minAge>1</minAge>
+                    <minAge>0.3</minAge>
                 </li>
                 <li>
                     <def>AnimalAdult</def>
-                    <minAge>2.2</minAge>
+                    <minAge>1.2</minAge>
                     <soundCall>Pawn_Rhinoceros_Call</soundCall>
                     <soundAngry>Pawn_Rhinoceros_Angry</soundAngry>
                     <soundWounded>Pawn_Rhinoceros_Wounded</soundWounded>
@@ -290,6 +303,7 @@
         </comps>
         <tradeTags>
             <li>AnimalExotic</li>
+			<li>AnimalFighter</li>
         </tradeTags>
     </ThingDef>
 
@@ -299,16 +313,14 @@
         <race>RG-EAP_WoollyRhino</race>
         <combatPower>500</combatPower>
         <canArriveManhunter>true</canArriveManhunter>
-        <wildGroupSize>
-            <min>2</min>
-            <max>4</max>
-        </wildGroupSize>
+		<ecoSystemWeight>2.5</ecoSystemWeight>
+		<wildGroupSize>2~5</wildGroupSize>
         <lifeStages>
             <li>
                 <label>woolly rhino calf</label>
                 <bodyGraphicData>
                     <texPath>Things/Pawn/Animal/ExtinctWoollyRhino/ExtinctWoollyRhinoBaby</texPath>
-                    <drawSize>2.2</drawSize>
+                    <drawSize>1.3</drawSize>
                     <shadowData>
                         <volume>(0.4, 0.3, 0.3)</volume>
                         <offset>(0,0,-0.2)</offset>
@@ -316,13 +328,13 @@
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/ExtinctWoollyRhino/dessicated_ExtinctWoollyRhino_east</texPath>
-                    <drawSize>2.1</drawSize>
+                    <drawSize>1.2</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
                     <texPath>Things/Pawn/Animal/ExtinctWoollyRhino/ExtinctWoollyRhinoM</texPath>
-                    <drawSize>3.2</drawSize>
+                    <drawSize>2.25</drawSize>
                     <shadowData>
                         <volume>(0.6, 0.45, 0.45)</volume>
                         <offset>(0,0,-0.25)</offset>
@@ -330,17 +342,21 @@
                 </bodyGraphicData>
                 <femaleGraphicData>
                     <texPath>Things/Pawn/Animal/ExtinctWoollyRhino/ExtinctWoollyRhinoF</texPath>
-                    <drawSize>3</drawSize>
+                    <drawSize>2.10</drawSize>
                 </femaleGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/ExtinctWoollyRhino/dessicated_ExtinctWoollyRhino_east</texPath>
-                    <drawSize>2.9</drawSize>
+                    <drawSize>2.20</drawSize>
                 </dessicatedBodyGraphicData>
+                <femaleDessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/ExtinctWoollyRhino/dessicated_ExtinctWoollyRhino_east</texPath>
+                    <drawSize>2.05</drawSize>
+                </femaleDessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
                     <texPath>Things/Pawn/Animal/ExtinctWoollyRhino/ExtinctWoollyRhinoM</texPath>
-                    <drawSize>4.2</drawSize>
+                    <drawSize>3.0</drawSize>
                     <shadowData>
                         <volume>(0.8, 0.6, 0.6)</volume>
                         <offset>(0,0,-0.3)</offset>
@@ -348,12 +364,16 @@
                 </bodyGraphicData>
                 <femaleGraphicData>
                     <texPath>Things/Pawn/Animal/ExtinctWoollyRhino/ExtinctWoollyRhinoF</texPath>
-                    <drawSize>4</drawSize>
+                    <drawSize>2.8</drawSize>
                 </femaleGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/ExtinctWoollyRhino/dessicated_ExtinctWoollyRhino_east</texPath>
-                    <drawSize>3.9</drawSize>
+                    <drawSize>3.0</drawSize>
                 </dessicatedBodyGraphicData>
+                <femaleDessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/ExtinctWoollyRhino/dessicated_ExtinctWoollyRhino_east</texPath>
+                    <drawSize>2.8</drawSize>
+                </femaleDessicatedBodyGraphicData>
             </li>
         </lifeStages>
     </PawnKindDef>
@@ -621,17 +641,17 @@
             <li>
                 <bodyGraphicData>
                     <texPath>Things/Pawn/Animal/ExtinctDodo/ExtinctDodo</texPath>
-                    <drawSize>1.2</drawSize>
+                    <drawSize>0.6</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/ExtinctDodo/Dessicated_ExtinctDodo</texPath>
-                    <drawSize>1.1</drawSize>
+                    <drawSize>0.6</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
                     <texPath>Things/Pawn/Animal/ExtinctDodo/ExtinctDodo</texPath>
-                    <drawSize>1.4</drawSize>
+                    <drawSize>1.0</drawSize>
                     <shadowData>
                         <volume>(0.3, 0.3, 0.3)</volume>
                         <offset>(0,0,-0.3)</offset>
@@ -639,13 +659,13 @@
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/ExtinctDodo/Dessicated_ExtinctDodo</texPath>
-                    <drawSize>1.3</drawSize>
+                    <drawSize>0.9</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
                     <texPath>Things/Pawn/Animal/ExtinctDodo/ExtinctDodo</texPath>
-                    <drawSize>1.8</drawSize>
+                    <drawSize>1.3</drawSize>
                     <shadowData>
                         <volume>(0.4, 0.4, 0.4)</volume>
                         <offset>(0,0,-0.2)</offset>
@@ -653,7 +673,7 @@
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/ExtinctDodo/Dessicated_ExtinctDodo</texPath>
-                    <drawSize>1.7</drawSize>
+                    <drawSize>1.3</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
         </lifeStages>
