@@ -60,14 +60,13 @@
             <baseHealthScale>8</baseHealthScale>
             <foodType>VegetarianRoughAnimal</foodType>
             <gestationPeriodDays>40</gestationPeriodDays>
-            <packAnimal>true</packAnimal>
+            <packAnimal>false</packAnimal>
             <wildness>0.75</wildness>
             <lifeExpectancy>90</lifeExpectancy>
             <trainability>Advanced</trainability>
             <manhunterOnTameFailChance>0.038</manhunterOnTameFailChance>
             <manhunterOnDamageChance>0.80</manhunterOnDamageChance>
-            <leatherDef>Leather_Elephant</leatherDef>
-            <useMeatFrom>Elephant</useMeatFrom>
+            <leatherDef>Leather_Heavy</leatherDef>
             <nuzzleMtbHours>60</nuzzleMtbHours>
             <litterSizeCurve>
                 <points>
@@ -99,11 +98,11 @@
             <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
         </race>
         <comps>
-            <li Class="CompProperties_Shearable">
-                <woolDef>MammothWool</woolDef>
-                <shearIntervalDays>50</shearIntervalDays>
-                <woolAmount>500</woolAmount>
-            </li>
+			<li Class="CompProperties_Milkable">
+				<milkDef>RG-EAP_WoollyMammothMilk</milkDef>
+				<milkIntervalDays>3</milkIntervalDays>
+				<milkAmount>12</milkAmount>
+			</li>
         </comps>
         <tradeTags>
             <li>AnimalExotic</li>
@@ -239,28 +238,19 @@
             <herdAnimal>true</herdAnimal>
             <predator>false</predator>
             <body>QuadrupedAnimalWithHoovesAndHorn</body>
-            <herdMigrationAllowed>false</herdMigrationAllowed>
+            <herdMigrationAllowed>true</herdMigrationAllowed>
             <baseHungerRate>1.8</baseHungerRate>
             <baseBodySize>4</baseBodySize>
             <baseHealthScale>6.5</baseHealthScale>
             <foodType>VegetarianRoughAnimal</foodType>
             <gestationPeriodDays>40</gestationPeriodDays>
-            <packAnimal>true</packAnimal>
+            <packAnimal>false</packAnimal>
             <wildness>0.80</wildness>
             <lifeExpectancy>60</lifeExpectancy>
             <trainability>Advanced</trainability>
             <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
             <manhunterOnDamageChance>1</manhunterOnDamageChance>
-            <leatherDef>Leather_Rhinoceros</leatherDef>
-            <useMeatFrom>Rhinoceros</useMeatFrom>
-            <wildBiomes>
-                <TemperateSwamp>0.002</TemperateSwamp>
-                <ColdBog>0.003</ColdBog>
-                <IceSheet>0.006</IceSheet>
-                <Tundra>0.01</Tundra>
-                <BorealForest>0.008</BorealForest>
-                <TemperateForest>0.004</TemperateForest>
-            </wildBiomes>
+            <leatherDef>Leather_Heavy</leatherDef>
             <nuzzleMtbHours>45</nuzzleMtbHours>
             <litterSizeCurve>
                 <points>
@@ -293,7 +283,7 @@
         </race>
         <comps>
             <li Class="CompProperties_Shearable">
-                <woolDef>ElasmotheriumWool</woolDef>
+                <woolDef>RG-EAP_WoollyRhinoWool</woolDef>
                 <shearIntervalDays>40</shearIntervalDays>
                 <woolAmount>400</woolAmount>
             </li>
@@ -364,11 +354,6 @@
                     <texPath>Things/Pawn/Animal/ExtinctWoollyRhino/dessicated_ExtinctWoollyRhino_east</texPath>
                     <drawSize>3.9</drawSize>
                 </dessicatedBodyGraphicData>
-                <butcherBodyPart>
-                    <bodyPartGroup>HornAttackTool</bodyPartGroup>
-                    <thing>RG-EAP-WoollyRhinoHorn</thing>
-                    <allowFemale>true</allowFemale>
-                </butcherBodyPart>
             </li>
         </lifeStages>
     </PawnKindDef>
@@ -380,9 +365,9 @@
         <label>protoceratidae</label>
         <description>placeholder</description>
         <statBases>
-            <MoveSpeed>5.5</MoveSpeed>
-            <MarketValue>250</MarketValue>
-            <ComfyTemperatureMin>-30</ComfyTemperatureMin>
+            <MoveSpeed>5.7</MoveSpeed>
+            <MarketValue>550</MarketValue>
+            <ComfyTemperatureMin>-25</ComfyTemperatureMin>
         </statBases>
         <tools>
             <li>
@@ -430,12 +415,13 @@
         <race>
             <body>QuadrupedAnimalWithHooves</body>
             <herdAnimal>true</herdAnimal>
+            <herdMigrationAllowed>true</herdMigrationAllowed>
             <baseBodySize>0.9</baseBodySize>
             <baseHealthScale>0.9</baseHealthScale>
             <baseHungerRate>0.40</baseHungerRate>
             <foodType>VegetarianRoughAnimal</foodType>
             <leatherDef>Leather_Plain</leatherDef>
-            <meatLabel>venison</meatLabel>
+            <meatLabel>protoceratidae venison</meatLabel>
             <wildness>0.75</wildness>
             <nuzzleMtbHours>60</nuzzleMtbHours>
             <gestationPeriodDays>24</gestationPeriodDays>
@@ -549,11 +535,12 @@
         <description>placeholder</description>
         <statBases>
             <MoveSpeed>3.6</MoveSpeed>
-            <MarketValue>100</MarketValue>
-            <ComfyTemperatureMin>-8</ComfyTemperatureMin>
+            <MarketValue>250</MarketValue>
+            <ComfyTemperatureMin>-2</ComfyTemperatureMin>
         </statBases>
         <race>
             <herdAnimal>false</herdAnimal>
+            <herdMigrationAllowed>false</herdMigrationAllowed>
             <baseBodySize>0.6</baseBodySize>
             <baseHealthScale>0.6</baseHealthScale>
             <baseHungerRate>0.50</baseHungerRate>
@@ -566,11 +553,11 @@
         </race>
         <comps>
             <li Class="CompProperties_EggLayer">
-                <eggFertilizedDef>EggTurkeyFertilized</eggFertilizedDef>
-                <eggFertilizationCountMax>1</eggFertilizationCountMax>
-                <eggLayIntervalDays>11</eggLayIntervalDays>
-                <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-                <eggCountRange>1~1</eggCountRange>
+				<eggUnfertilizedDef>RG-EAP_DodoEggUnfertilized</eggUnfertilizedDef>
+				<eggFertilizedDef>RG-EAP_DodoEggFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>4</eggLayIntervalDays>
+				<eggCountRange>3</eggCountRange>
             </li>
         </comps>
         <tools>
@@ -675,15 +662,15 @@
     <!-- ============================================================ -->
 
     <ThingDef ParentName="AnimalThingBase">
-        <defName>RG-EAP_ArticDrak</defName>
-        <label>artic drak</label>
+        <defName>RG-EAP_ArcticDrak</defName>
+        <label>Arctic drak</label>
         <description>placeholder</description>
         <statBases>
-            <MoveSpeed>5</MoveSpeed>
+            <MoveSpeed>3.2</MoveSpeed>
             <ComfyTemperatureMin>-80</ComfyTemperatureMin>
-            <MarketValue>2000</MarketValue>
-            <MeatAmount>100</MeatAmount>
-            <LeatherAmount>20</LeatherAmount>
+            <MarketValue>1850</MarketValue>
+            <MeatAmount>125</MeatAmount>
+            <LeatherAmount>50</LeatherAmount>
             <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
             <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
         </statBases>
@@ -696,7 +683,7 @@
                 </capacities>
                 <power>9</power>
                 <cooldownTime>1.2</cooldownTime>
-                <linkedBodyPartsGroup>FootClawAttackTool</linkedBodyPartsGroup>
+                <linkedBodyPartsGroup>RG-EAP_FootClawAttackTool</linkedBodyPartsGroup>
                 <chanceFactor>0.25</chanceFactor>
             </li>
             <li>
@@ -707,7 +694,7 @@
                 </capacities>
                 <power>9</power>
                 <cooldownTime>1.2</cooldownTime>
-                <linkedBodyPartsGroup>FootClawAttackTool</linkedBodyPartsGroup>
+                <linkedBodyPartsGroup>RG-EAP_FootClawAttackTool</linkedBodyPartsGroup>
                 <chanceFactor>0.25</chanceFactor>
             </li>
             <li>
@@ -720,11 +707,30 @@
                 <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
                 <chanceFactor>0.5</chanceFactor>
             </li>
+			<li>
+				<label>tail</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RG-EAP_TailAttackTool</linkedBodyPartsGroup>
+				<chanceFactor>0.3</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>15</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+
+			</li>
         </tools>
         <comps>
             <li Class="CompProperties_EggLayer">
-                <eggFertilizedDef>RG-EAP_EggDrak</eggFertilizedDef>
-                <eggFertilizationCountMax>1</eggFertilizationCountMax>
+                <eggFertilizedDef>RG-EAP_DrakEgg</eggFertilizedDef>
+                <eggFertilizationCountMax>3</eggFertilizationCountMax>
                 <eggLayIntervalDays>30</eggLayIntervalDays>
                 <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
                 <eggCountRange>1</eggCountRange>
@@ -733,8 +739,8 @@
         <race>
             <herdAnimal>false</herdAnimal>
             <predator>true</predator>
-            <body>RG-EAP-TheropodWithClaws</body>
-            <leatherDef>Leather_Raptor</leatherDef>
+            <herdMigrationAllowed>false</herdMigrationAllowed>
+            <leatherDef>Leather_Heavy</leatherDef>
             <baseHungerRate>0.55</baseHungerRate>
             <baseBodySize>2</baseBodySize>
             <baseHealthScale>2.5</baseHealthScale>
@@ -742,20 +748,12 @@
             <gestationPeriodDays>30</gestationPeriodDays>
             <packAnimal>false</packAnimal>
             <wildness>0.95</wildness>
-            <lifeExpectancy>35</lifeExpectancy>
+            <lifeExpectancy>20</lifeExpectancy>
             <trainability>Advanced</trainability>
+            <body>RG-EAP-TheropodWithClaws</body>
             <manhunterOnTameFailChance>0.35</manhunterOnTameFailChance>
             <manhunterOnDamageChance>0.45</manhunterOnDamageChance>
             <meatLabel>drak meat</meatLabel>
-            <wildBiomes>
-                <AridShrubland>0.01</AridShrubland>
-                <TemperateForest>0.01</TemperateForest>
-                <TropicalRainforest>0.01</TropicalRainforest>
-                <IceSheet>0</IceSheet>
-                <BorealForest>0.06</BorealForest>
-                <Tundra>0.06</Tundra>
-                <Desert>0.004</Desert>
-            </wildBiomes>
             <nuzzleMtbHours>275</nuzzleMtbHours>
             <litterSizeCurve>
                 <points>
@@ -788,14 +786,14 @@
     </ThingDef>
 
     <PawnKindDef ParentName="AnimalKindBase">
-        <defName>RG-EAP_ArticDrak</defName>
-        <label>artic drak</label>
-        <race>RG-EAP_ArticDrak</race>
+        <defName>RG-EAP_ArcticDrak</defName>
+        <label>arctic drak</label>
+        <race>RG-EAP_ArcticDrak</race>
         <combatPower>450</combatPower>
         <lifeStages>
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/ExtinctArticDrak/ExtinctArticDrakM</texPath>
+                    <texPath>Things/Pawn/Animal/ExtinctArcticDrak/ExtinctArcticDrakM</texPath>
                     <drawSize>1.8</drawSize>
                     <shadowData>
                         <volume>(0.25, 0.3, 0.25)</volume>
@@ -803,7 +801,7 @@
                     </shadowData>
                 </bodyGraphicData>
                 <femaleGraphicData>
-                    <texPath>Things/Pawn/Animal/ExtinctArticDrak/ExtinctArticDrakF</texPath>
+                    <texPath>Things/Pawn/Animal/ExtinctArcticDrak/ExtinctArcticDrakF</texPath>
                     <drawSize>1.7</drawSize>
                     <shadowData>
                         <volume>(0.25, 0.3, 0.25)</volume>
@@ -811,13 +809,13 @@
                     </shadowData>
                 </femaleGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/ExtinctArticDrak/dessicated_ExtinctArticDrak</texPath>
+                    <texPath>Things/Pawn/Animal/ExtinctArcticDrak/dessicated_ExtinctArcticDrak</texPath>
                     <drawSize>1.6</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/ExtinctArticDrak/ExtinctArticDrakM</texPath>
+                    <texPath>Things/Pawn/Animal/ExtinctArcticDrak/ExtinctArcticDrakM</texPath>
                     <drawSize>2.6</drawSize>
                     <shadowData>
                         <volume>(0.25, 0.3, 0.25)</volume>
@@ -825,7 +823,7 @@
                     </shadowData>
                 </bodyGraphicData>
                 <femaleGraphicData>
-                    <texPath>Things/Pawn/Animal/ExtinctArticDrak/ExtinctArticDrakF</texPath>
+                    <texPath>Things/Pawn/Animal/ExtinctArcticDrak/ExtinctArcticDrakF</texPath>
                     <drawSize>2.4</drawSize>
                     <shadowData>
                         <volume>(0.25, 0.3, 0.25)</volume>
@@ -833,13 +831,13 @@
                     </shadowData>
                 </femaleGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/ExtinctArticDrak/dessicated_ExtinctArticDrak</texPath>
+                    <texPath>Things/Pawn/Animal/ExtinctArcticDrak/dessicated_ExtinctArcticDrak</texPath>
                     <drawSize>2.3</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/ExtinctArticDrak/ExtinctArticDrakM</texPath>
+                    <texPath>Things/Pawn/Animal/ExtinctArcticDrak/ExtinctArcticDrakM</texPath>
                     <drawSize>3.3</drawSize>
                     <shadowData>
                         <volume>(0.3, 0.4, 0.3)</volume>
@@ -847,7 +845,7 @@
                     </shadowData>
                 </bodyGraphicData>
                 <femaleGraphicData>
-                    <texPath>Things/Pawn/Animal/ExtinctArticDrak/ExtinctArticDrakF</texPath>
+                    <texPath>Things/Pawn/Animal/ExtinctArcticDrak/ExtinctArcticDrakF</texPath>
                     <drawSize>3.1</drawSize>
                     <shadowData>
                         <volume>(0.3, 0.4, 0.3)</volume>
@@ -855,7 +853,7 @@
                     </shadowData>
                 </femaleGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/ExtinctArticDrak/dessicated_ExtinctArticDrak</texPath>
+                    <texPath>Things/Pawn/Animal/ExtinctArcticDrak/dessicated_ExtinctArcticDrak</texPath>
                     <drawSize>2.9</drawSize>
                 </dessicatedBodyGraphicData>
             </li>

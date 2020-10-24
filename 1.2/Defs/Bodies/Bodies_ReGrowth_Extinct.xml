@@ -12,6 +12,9 @@
 				<li>
 					<def>Tail</def>
 					<coverage>0.15</coverage>
+					<groups>
+						<li>RG-EAP_TailAttackTool</li>
+					</groups>
 				</li>
 				<li>
 					<def>Spine</def>
@@ -117,11 +120,11 @@
 							</groups>
 						</li>
 						<li>
-							<def>FootClaw</def>
+							<def>RG-EAP_FootClaw</def>
 							<customLabel>left claw</customLabel>
 							<coverage>0.2</coverage>
 							<groups>
-								<li>FootClawAttackTool</li>
+								<li>RG-EAP_FootClawAttackTool</li>
 							</groups>
 						</li>
 					</parts>
@@ -141,11 +144,11 @@
 							</groups>
 						</li>
 						<li>
-							<def>FootClaw</def>
+							<def>RG-EAP_FootClaw</def>
 							<customLabel>right claw</customLabel>
 							<coverage>0.2</coverage>
 							<groups>
-								<li>FootClawAttackTool</li>
+								<li>RG-EAP_FootClawAttackTool</li>
 							</groups>
 						</li>
 					</parts>

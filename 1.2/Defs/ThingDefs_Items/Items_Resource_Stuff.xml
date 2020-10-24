@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThingDef ParentName="WoolBase">
+        <defName>RG-EAP_WoollyRhinoWool</defName>
+        <label>woolly rhino wool</label>
+        <description>placeholder</description>
+        <graphicData>
+            <color>(92,73,60)</color>
+        </graphicData>
+        <stuffProps>
+            <color>(92,73,60)</color>
+            <commonality>0.04</commonality>
+        </stuffProps>
+        <statBases>
+            <StuffPower_Armor_Sharp>0.90</StuffPower_Armor_Sharp>
+            <StuffPower_Insulation_Cold>40</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>19</StuffPower_Insulation_Heat>
+            <MarketValue>6.5</MarketValue>
+        </statBases>
+    </ThingDef>
+
+</Defs>

@@ -7,7 +7,7 @@
 		<li>1.2</li>
 	</supportedVersions>
 	<url></url>
-	<packageId>ReGrowth.BOTR.ExtinctAnimalsPack.1</packageId>
+	<packageId>ReGrowth.BOTR.ExtinctAnimalsPack</packageId>
 	<description>Check the workshop page for information.</description>
 	<modDependencies>
         <li>
