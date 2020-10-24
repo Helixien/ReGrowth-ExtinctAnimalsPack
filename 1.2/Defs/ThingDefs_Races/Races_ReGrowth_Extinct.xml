@@ -687,10 +687,10 @@
 
     <ThingDef ParentName="AnimalThingBase">
         <defName>RG-EAP_ArcticDrak</defName>
-        <label>Arctic drak</label>
+        <label>arctic drak</label>
         <description>The result of genetic engineering and trying to revive long extinct animals, the polar drak is a large bird-like hybrid with long, white feathers and giant claws. It lives in colder regions and is mostly peaceful, preferring smaller prey.</description>
         <statBases>
-            <MoveSpeed>3.2</MoveSpeed>
+            <MoveSpeed>4.6</MoveSpeed>
             <ComfyTemperatureMin>-60</ComfyTemperatureMin>
             <MarketValue>1850</MarketValue>
             <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
@@ -795,6 +795,10 @@
                 <li>
                     <def>AnimalAdult</def>
                     <minAge>0.8</minAge>
+					<soundWounded>Pawn_Muffalo_Wounded</soundWounded>
+					<soundDeath>Pawn_Muffalo_Death</soundDeath>
+					<soundCall>Pawn_Muffalo_Call</soundCall>
+					<soundAngry>Pawn_Muffalo_Angry</soundAngry>
                 </li>
             </lifeStageAges>
             <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>

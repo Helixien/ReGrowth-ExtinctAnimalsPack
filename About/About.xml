@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 
-	<name>ReGrowth - Extinct Animals Pack</name>
+	<name>[HLX] ReGrowth - Extinct Animals Pack</name>
 	<author>Helixien</author>
 	<supportedVersions>
 		<li>1.2</li>
 	</supportedVersions>
-	<url></url>
+	<url>https://steamcommunity.com/sharedfiles/filedetails/?id=2266685892</url>
 	<packageId>ReGrowth.BOTR.ExtinctAnimalsPack</packageId>
 	<description>Check the workshop page for information.</description>
 	<modDependencies>
         <li>
             <packageId>ReGrowth.BOTR.Core</packageId>
             <displayName>>ReGrowth - Core</displayName>
-            <downloadUrl>https://github.com/Helixien/ReGrowth-TemperateForest</downloadUrl>
+            <downloadUrl>https://github.com/Helixien/ReGrowth-Core</downloadUrl>
             <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2260097569</steamWorkshopUrl>
         </li>
     </modDependencies>
