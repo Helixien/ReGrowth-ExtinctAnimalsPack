@@ -116,11 +116,9 @@
         <label>woolly mammoth</label>
         <race>RG-EAP_WoollyMammoth</race>
         <combatPower>400</combatPower>
+		<ecoSystemWeight>3.5</ecoSystemWeight>
         <canArriveManhunter>true</canArriveManhunter>
-        <wildGroupSize>
-            <min>3</min>
-            <max>7</max>
-        </wildGroupSize>
+		<wildGroupSize>3~5</wildGroupSize>
         <lifeStages>
             <li>
                 <label>woolly mammoth calf</label>
@@ -383,11 +381,11 @@
     <ThingDef ParentName="AnimalThingBase">
         <defName>RG-EAP-Protoceratidae</defName>
         <label>protoceratidae</label>
-        <description>placeholder</description>
+        <description>An once extinct species of deer-like herbivorous. It prefers to live in mixed forests and plains. Protoceratidae are very quick and can use their horns as a means of defense.</description>
         <statBases>
-            <MoveSpeed>5.7</MoveSpeed>
-            <MarketValue>550</MarketValue>
-            <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+            <MoveSpeed>5.5</MoveSpeed>
+            <MarketValue>350</MarketValue>
+            <ComfyTemperatureMin>-15</ComfyTemperatureMin>
         </statBases>
         <tools>
             <li>
@@ -421,6 +419,16 @@
                 <chanceFactor>0.5</chanceFactor>
             </li>
             <li>
+                <label>horn</label>
+                <capacities>
+                    <li>Scratch</li>
+                </capacities>
+                <power>19</power>
+                <cooldownTime>1.7</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <chanceFactor>0.5</chanceFactor>
+            </li>
+            <li>
                 <label>head</label>
                 <capacities>
                     <li>Blunt</li>
@@ -441,13 +449,13 @@
             <baseHungerRate>0.40</baseHungerRate>
             <foodType>VegetarianRoughAnimal</foodType>
             <leatherDef>Leather_Plain</leatherDef>
-            <meatLabel>protoceratidae venison</meatLabel>
+            <meatLabel>proto venison</meatLabel>
             <wildness>0.75</wildness>
             <nuzzleMtbHours>60</nuzzleMtbHours>
             <gestationPeriodDays>24</gestationPeriodDays>
             <lifeExpectancy>15</lifeExpectancy>
-            <manhunterOnDamageChance>0</manhunterOnDamageChance>
-            <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>0.2</manhunterOnDamageChance>
+            <manhunterOnTameFailChance>0.2</manhunterOnTameFailChance>
             <lifeStageAges>
                 <li>
                     <def>AnimalBaby</def>
@@ -479,19 +487,16 @@
         <defName>RG-EAP-Protoceratidae</defName>
         <label>protoceratidae</label>
         <race>RG-EAP-Protoceratidae</race>
-        <combatPower>50</combatPower>
-        <ecoSystemWeight>0.50</ecoSystemWeight>
-        <wildGroupSize>
-            <min>3</min>
-            <max>7</max>
-        </wildGroupSize>
+        <combatPower>65</combatPower>
+        <ecoSystemWeight>1.50</ecoSystemWeight>
+		<wildGroupSize>3~9</wildGroupSize>
         <labelMale>protoceratidae buck</labelMale>
         <labelFemale>protoceratidae doe</labelFemale>
         <lifeStages>
             <li>
                 <bodyGraphicData>
                     <texPath>Things/Pawn/Animal/ExtinctProtoceratidae/ExtinctProtoceratidaeF</texPath>
-                    <drawSize>1.1</drawSize>
+                    <drawSize>1.0</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/ExtinctProtoceratidae/dessicated_protoceratidae_east</texPath>
@@ -501,7 +506,7 @@
             <li>
                 <bodyGraphicData>
                     <texPath>Things/Pawn/Animal/ExtinctProtoceratidae/ExtinctProtoceratidaeM</texPath>
-                    <drawSize>1.5</drawSize>
+                    <drawSize>1.4</drawSize>
                     <color>(140,74,41)</color>
                     <shaderType>CutoutComplex</shaderType>
                     <shadowData>
@@ -511,7 +516,7 @@
                 </bodyGraphicData>
                 <femaleGraphicData>
                     <texPath>Things/Pawn/Animal/ExtinctProtoceratidae/ExtinctProtoceratidaeF</texPath>
-                    <drawSize>1.5</drawSize>
+                    <drawSize>1.4</drawSize>
                     <shadowData>
                         <volume>(0.4, 0.4, 0.4)</volume>
                         <offset>(0,0,-0.2)</offset>
@@ -525,7 +530,7 @@
             <li>
                 <bodyGraphicData>
                     <texPath>Things/Pawn/Animal/ExtinctProtoceratidae/ExtinctProtoceratidaeM</texPath>
-                    <drawSize>1.8</drawSize>
+                    <drawSize>1.6</drawSize>
                     <shadowData>
                         <volume>(0.4, 0.4, 0.4)</volume>
                         <offset>(0,0,-0.2)</offset>
@@ -533,7 +538,7 @@
                 </bodyGraphicData>
                 <femaleGraphicData>
                     <texPath>Things/Pawn/Animal/ExtinctProtoceratidae/ExtinctProtoceratidaeF</texPath>
-                    <drawSize>1.8</drawSize>
+                    <drawSize>1.6</drawSize>
                     <shadowData>
                         <volume>(0.4, 0.4, 0.4)</volume>
                         <offset>(0,0,-0.2)</offset>
@@ -552,34 +557,24 @@
     <ThingDef ParentName="BigBirdThingBase">
         <defName>RG-EAP_Dodo</defName>
         <label>dodo</label>
-        <description>placeholder</description>
+        <description>An once extinct species of flightless birds. It prefers to live in warmer regions and defense itself with is giant beak.</description>
         <statBases>
-            <MoveSpeed>3.6</MoveSpeed>
-            <MarketValue>250</MarketValue>
-            <ComfyTemperatureMin>-2</ComfyTemperatureMin>
+            <MoveSpeed>3.2</MoveSpeed>
+            <MarketValue>550</MarketValue>
+            <ComfyTemperatureMin>-10</ComfyTemperatureMin>
         </statBases>
         <race>
             <herdAnimal>false</herdAnimal>
-            <herdMigrationAllowed>false</herdMigrationAllowed>
-            <baseBodySize>0.6</baseBodySize>
-            <baseHealthScale>0.6</baseHealthScale>
+            <baseBodySize>0.70</baseBodySize>
+            <baseHealthScale>0.70</baseHealthScale>
             <baseHungerRate>0.50</baseHungerRate>
             <foodType>VegetarianRoughAnimal</foodType>
-            <wildness>0.45</wildness>
-            <trainability>None</trainability>
+            <wildness>0.75</wildness>
+			<trainability>Intermediate</trainability>
             <lifeExpectancy>9</lifeExpectancy>
             <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
             <manhunterOnDamageChance>0</manhunterOnDamageChance>
         </race>
-        <comps>
-            <li Class="CompProperties_EggLayer">
-				<eggUnfertilizedDef>RG-EAP_DodoEggUnfertilized</eggUnfertilizedDef>
-				<eggFertilizedDef>RG-EAP_DodoEggFertilized</eggFertilizedDef>
-				<eggFertilizationCountMax>1</eggFertilizationCountMax>
-				<eggLayIntervalDays>4</eggLayIntervalDays>
-				<eggCountRange>3</eggCountRange>
-            </li>
-        </comps>
         <tools>
             <li>
                 <label>claws</label>
@@ -603,7 +598,7 @@
                 <capacities>
                     <li>Bite</li>
                 </capacities>
-                <power>6</power>
+                <power>8</power>
                 <cooldownTime>2</cooldownTime>
                 <linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
                 <surpriseAttack>
@@ -620,13 +615,22 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>4</power>
+                <power>6</power>
                 <cooldownTime>2</cooldownTime>
                 <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
                 <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
                 <chanceFactor>0.2</chanceFactor>
             </li>
         </tools>
+        <comps>
+            <li Class="CompProperties_EggLayer">
+				<eggUnfertilizedDef>RG-EAP_DodoEggUnfertilized</eggUnfertilizedDef>
+				<eggFertilizedDef>RG-EAP_DodoEggFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>5</eggLayIntervalDays>
+				<eggCountRange>3</eggCountRange>
+            </li>
+        </comps>
         <tradeTags>
             <li>AnimalExotic</li>
         </tradeTags>
@@ -651,7 +655,7 @@
             <li>
                 <bodyGraphicData>
                     <texPath>Things/Pawn/Animal/ExtinctDodo/ExtinctDodo</texPath>
-                    <drawSize>1.0</drawSize>
+                    <drawSize>0.8</drawSize>
                     <shadowData>
                         <volume>(0.3, 0.3, 0.3)</volume>
                         <offset>(0,0,-0.3)</offset>
@@ -659,13 +663,13 @@
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/ExtinctDodo/Dessicated_ExtinctDodo</texPath>
-                    <drawSize>0.9</drawSize>
+                    <drawSize>0.8</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
                     <texPath>Things/Pawn/Animal/ExtinctDodo/ExtinctDodo</texPath>
-                    <drawSize>1.3</drawSize>
+                    <drawSize>1.0</drawSize>
                     <shadowData>
                         <volume>(0.4, 0.4, 0.4)</volume>
                         <offset>(0,0,-0.2)</offset>
@@ -673,7 +677,7 @@
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/ExtinctDodo/Dessicated_ExtinctDodo</texPath>
-                    <drawSize>1.3</drawSize>
+                    <drawSize>1.0</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
         </lifeStages>
@@ -684,15 +688,13 @@
     <ThingDef ParentName="AnimalThingBase">
         <defName>RG-EAP_ArcticDrak</defName>
         <label>Arctic drak</label>
-        <description>placeholder</description>
+        <description>The result of genetic engineering and trying to revive long extinct animals, the polar drak is a large bird-like hybrid with long, white feathers and giant claws. It lives in colder regions and is mostly peaceful, preferring smaller prey.</description>
         <statBases>
             <MoveSpeed>3.2</MoveSpeed>
-            <ComfyTemperatureMin>-80</ComfyTemperatureMin>
+            <ComfyTemperatureMin>-60</ComfyTemperatureMin>
             <MarketValue>1850</MarketValue>
-            <MeatAmount>125</MeatAmount>
-            <LeatherAmount>50</LeatherAmount>
-            <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
-            <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
         </statBases>
         <tools>
             <li>
@@ -768,12 +770,11 @@
             <gestationPeriodDays>30</gestationPeriodDays>
             <packAnimal>false</packAnimal>
             <wildness>0.95</wildness>
-            <lifeExpectancy>20</lifeExpectancy>
+            <lifeExpectancy>22</lifeExpectancy>
             <trainability>Advanced</trainability>
             <body>RG-EAP-TheropodWithClaws</body>
-            <manhunterOnTameFailChance>0.35</manhunterOnTameFailChance>
-            <manhunterOnDamageChance>0.45</manhunterOnDamageChance>
-            <meatLabel>drak meat</meatLabel>
+            <manhunterOnTameFailChance>0.55</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>0.65</manhunterOnDamageChance>
             <nuzzleMtbHours>275</nuzzleMtbHours>
             <litterSizeCurve>
                 <points>
