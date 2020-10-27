@@ -763,18 +763,20 @@
             <predator>true</predator>
             <herdMigrationAllowed>false</herdMigrationAllowed>
             <leatherDef>Leather_Heavy</leatherDef>
-            <baseHungerRate>0.55</baseHungerRate>
+            <baseHungerRate>0.45</baseHungerRate>
             <baseBodySize>2</baseBodySize>
-            <baseHealthScale>2.5</baseHealthScale>
-            <foodType>CarnivoreAnimal</foodType>
+            <baseHealthScale>3.0</baseHealthScale>
+            <foodType>CarnivoreAnimalStrict</foodType>
             <gestationPeriodDays>30</gestationPeriodDays>
             <packAnimal>false</packAnimal>
             <wildness>0.95</wildness>
+			<maxPreyBodySize>1.5</maxPreyBodySize>
             <lifeExpectancy>22</lifeExpectancy>
             <trainability>Advanced</trainability>
             <body>RG-EAP-TheropodWithClaws</body>
             <manhunterOnTameFailChance>0.55</manhunterOnTameFailChance>
             <manhunterOnDamageChance>0.65</manhunterOnDamageChance>
+			<nameOnTameChance>1</nameOnTameChance>
             <nuzzleMtbHours>275</nuzzleMtbHours>
             <litterSizeCurve>
                 <points>
@@ -795,10 +797,10 @@
                 <li>
                     <def>AnimalAdult</def>
                     <minAge>0.8</minAge>
-					<soundWounded>Pawn_Muffalo_Wounded</soundWounded>
-					<soundDeath>Pawn_Muffalo_Death</soundDeath>
-					<soundCall>Pawn_Muffalo_Call</soundCall>
-					<soundAngry>Pawn_Muffalo_Angry</soundAngry>
+					<soundCall>Pawn_Thrumbo_Call</soundCall>
+					<soundAngry>Pawn_Thrumbo_Angry</soundAngry>
+					<soundWounded>Pawn_Thrumbo_Pain</soundWounded>
+					<soundDeath>Pawn_Thrumbo_Death</soundDeath>
                 </li>
             </lifeStageAges>
             <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
@@ -807,6 +809,7 @@
         </race>
         <tradeTags>
             <li>AnimalExotic</li>
+			<li>AnimalFighter</li>
         </tradeTags>
     </ThingDef>
 
@@ -814,7 +817,7 @@
         <defName>RG-EAP_ArcticDrak</defName>
         <label>arctic drak</label>
         <race>RG-EAP_ArcticDrak</race>
-        <combatPower>450</combatPower>
+        <combatPower>150</combatPower>
         <lifeStages>
             <li>
                 <bodyGraphicData>

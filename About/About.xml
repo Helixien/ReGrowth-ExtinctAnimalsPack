@@ -12,7 +12,7 @@
 	<modDependencies>
         <li>
             <packageId>ReGrowth.BOTR.Core</packageId>
-            <displayName>>ReGrowth - Core</displayName>
+            <displayName>ReGrowth - Core</displayName>
             <downloadUrl>https://github.com/Helixien/ReGrowth-Core</downloadUrl>
             <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2260097569</steamWorkshopUrl>
         </li>
