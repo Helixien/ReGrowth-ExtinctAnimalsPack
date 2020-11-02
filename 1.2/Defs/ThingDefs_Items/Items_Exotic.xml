@@ -4,7 +4,7 @@
     <ThingDef ParentName="ResourceVerbBase">
         <defName>RG-EAP_WoollyMammothTusk</defName>
         <label>woolly mammoth tusk</label>
-        <description>placeholder</description>
+        <description>The tusk of a wooly mammoth. It can be sold to traders for silver.</description>
         <graphicData>
             <texPath>Things/Item/Special/WoollyMammothTusk</texPath>
             <graphicClass>Graphic_Single</graphicClass>

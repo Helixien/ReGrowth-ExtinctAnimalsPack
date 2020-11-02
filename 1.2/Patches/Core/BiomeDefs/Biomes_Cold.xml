@@ -46,5 +46,24 @@
             </operations>
         </match>
     </Operation>
+	
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+			<li>ReGrowth - Volcanic Ice Sheet</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BiomeDef[defName="RG-VIS_VulcanicIceSheet"]/wildAnimals</xpath>
+                    <value>
+                        <RG-EAP_WoollyMammoth>0.5</RG-EAP_WoollyMammoth>
+						<RG-EAP_WoollyRhino>0.2</RG-EAP_WoollyRhino>
+						<RG-EAP_ArcticDrak>0.2</RG-EAP_ArcticDrak>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
 
 </Patch>
