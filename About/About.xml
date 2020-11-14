@@ -12,15 +12,12 @@
 	<modDependencies>
         <li>
             <packageId>ReGrowth.BOTR.Core</packageId>
-            <displayName>ReGrowth - Core</displayName>
+            <displayName>[HLX] ReGrowth - Core</displayName>
             <downloadUrl>https://github.com/Helixien/ReGrowth-Core</downloadUrl>
             <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2260097569</steamWorkshopUrl>
         </li>
     </modDependencies>
 	<loadAfter>
-		<li>Ludeon.RimWorld</li>
-		<li>Ludeon.RimWorld.Royalty</li>
-		<li>brrainz.harmony</li>
 		<li>ReGrowth.BOTR.Core</li>
 	</loadAfter>
 	<loadBefore>

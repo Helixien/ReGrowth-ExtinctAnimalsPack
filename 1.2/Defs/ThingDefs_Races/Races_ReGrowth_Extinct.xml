@@ -648,7 +648,7 @@
                     <drawSize>0.6</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/ExtinctDodo/Dessicated_ExtinctDodo</texPath>
+                    <texPath>Things/Pawn/Animal/ExtinctDodo/dessicated_ExtinctDodoDead</texPath>
                     <drawSize>0.6</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -662,7 +662,7 @@
                     </shadowData>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/ExtinctDodo/Dessicated_ExtinctDodo</texPath>
+                    <texPath>Things/Pawn/Animal/ExtinctDodo/dessicated_ExtinctDodoDead</texPath>
                     <drawSize>0.8</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
@@ -676,7 +676,7 @@
                     </shadowData>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/ExtinctDodo/Dessicated_ExtinctDodo</texPath>
+                    <texPath>Things/Pawn/Animal/ExtinctDodo/dessicated_ExtinctDodoDead</texPath>
                     <drawSize>1.0</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
