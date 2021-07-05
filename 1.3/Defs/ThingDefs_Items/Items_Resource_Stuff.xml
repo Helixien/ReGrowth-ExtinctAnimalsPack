@@ -2,8 +2,8 @@
 <Defs>
 
     <ThingDef ParentName="WoolBase">
-        <defName>RG-EAP_WoollyRhinoWool</defName>
-        <label>woolly rhino wool</label>
+        <defName>RG-EAP_WoollyRhinocerosWool</defName>
+        <label>woolly rhinoceros wool</label>
         <description>placeholder</description>
         <graphicData>
             <color>(92,73,60)</color>

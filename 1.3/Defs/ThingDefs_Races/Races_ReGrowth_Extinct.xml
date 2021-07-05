@@ -4,7 +4,7 @@
     <ThingDef ParentName="AnimalThingBase">
         <defName>RG-EAP_WoollyMammoth</defName>
         <label>woolly mammoth</label>
-		<devNote>woolly mammoth</devNote>
+		<devNote>erin-1</devNote>
         <description>An once extinct species of elephants that was common on old earth. Mammoths have a long trunk they use to manipulate objects, sharp tusks they use to gore attackers and long fur, thick fur that allows them to live in cold regions. A dead mammoth's valuable tusks can be recovered by butchering it.</description>
         <statBases>
             <MoveSpeed>4.5</MoveSpeed>
@@ -201,14 +201,16 @@
     <!-- ============================================================ -->
 
     <ThingDef ParentName="AnimalThingBase">
-        <defName>RG-EAP_WoollyRhino</defName>
-        <label>woolly rhino</label>
+        <defName>RG-EAP_WoollyRhinoceros</defName>
+        <label>woolly rhinoceros</label>
+		<devNote>erin-2</devNote>
         <description>An once extinct species of rhinoceros that was common on old earth. Its long fur allows it to live even in the coldest regions in small herds. Its massive strength and sharp horn make it a brutal opponent.</description>
         <statBases>
             <MoveSpeed>4.6</MoveSpeed>
             <ComfyTemperatureMin>-75</ComfyTemperatureMin>
 			<ComfyTemperatureMax>15</ComfyTemperatureMax>
-            <MarketValue>1300</MarketValue>
+            <MarketValue>1000</MarketValue>
+			<FilthRate>22</FilthRate>
         </statBases>
         <tools>
             <li>
@@ -251,16 +253,16 @@
         </tools>
         <race>
             <body>QuadrupedAnimalWithHoovesAndHorn</body>
-            <baseHungerRate>1.8</baseHungerRate>
+            <baseHungerRate>1.5</baseHungerRate>
             <baseBodySize>3.0</baseBodySize>
-            <baseHealthScale>3.8</baseHealthScale>
+            <baseHealthScale>3.9</baseHealthScale>
             <herdMigrationAllowed>true</herdMigrationAllowed>
             <foodType>VegetarianRoughAnimal</foodType>
             <gestationPeriodDays>40</gestationPeriodDays>
             <packAnimal>false</packAnimal>
             <wildness>0.90</wildness>
             <lifeExpectancy>45</lifeExpectancy>
-            <trainability>Advanced</trainability>
+            <trainability>Intermediate</trainability>
 			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
             <leatherDef>Leather_Heavy</leatherDef>
@@ -299,7 +301,7 @@
         </race>
         <comps>
             <li Class="CompProperties_Shearable">
-                <woolDef>RG-EAP_WoollyRhinoWool</woolDef>
+                <woolDef>RG-EAP_WoollyRhinocerosWool</woolDef>
                 <shearIntervalDays>40</shearIntervalDays>
                 <woolAmount>400</woolAmount>
             </li>
@@ -311,9 +313,9 @@
     </ThingDef>
 
     <PawnKindDef ParentName="AnimalKindBase">
-        <defName>RG-EAP_WoollyRhino</defName>
-        <label>woolly rhino</label>
-        <race>RG-EAP_WoollyRhino</race>
+        <defName>RG-EAP_WoollyRhinoceros</defName>
+        <label>woolly rhinoceros</label>
+        <race>RG-EAP_WoollyRhinoceros</race>
         <combatPower>500</combatPower>
         <canArriveManhunter>true</canArriveManhunter>
 		<ecoSystemWeight>2.5</ecoSystemWeight>
@@ -386,11 +388,13 @@
     <ThingDef ParentName="AnimalThingBase">
         <defName>RG-EAP-Protoceratidae</defName>
         <label>protoceratidae</label>
+		<devNote>erin-3</devNote>
         <description>An once extinct species of deer-like herbivorous. It prefers to live in mixed forests and plains. Protoceratidae are very quick and can use their horns as a means of defense.</description>
         <statBases>
             <MoveSpeed>5.5</MoveSpeed>
             <MarketValue>350</MarketValue>
             <ComfyTemperatureMin>-15</ComfyTemperatureMin>
+			<FilthRate>16</FilthRate>
         </statBases>
         <tools>
             <li>
@@ -456,9 +460,10 @@
             <leatherDef>Leather_Plain</leatherDef>
             <meatLabel>proto venison</meatLabel>
             <wildness>0.75</wildness>
+			<roamMtbDays>2</roamMtbDays>
             <nuzzleMtbHours>60</nuzzleMtbHours>
             <gestationPeriodDays>24</gestationPeriodDays>
-            <lifeExpectancy>15</lifeExpectancy>
+            <lifeExpectancy>18</lifeExpectancy>
             <manhunterOnDamageChance>0.2</manhunterOnDamageChance>
             <manhunterOnTameFailChance>0.2</manhunterOnTameFailChance>
             <lifeStageAges>
@@ -495,8 +500,8 @@
         <combatPower>65</combatPower>
         <ecoSystemWeight>1.50</ecoSystemWeight>
 		<wildGroupSize>3~9</wildGroupSize>
-        <labelMale>protoceratidae buck</labelMale>
-        <labelFemale>protoceratidae doe</labelFemale>
+        <labelMale>buck</labelMale>
+        <labelFemale>doe</labelFemale>
         <lifeStages>
             <li>
                 <bodyGraphicData>
@@ -562,11 +567,13 @@
     <ThingDef ParentName="BigBirdThingBase">
         <defName>RG-EAP_Dodo</defName>
         <label>dodo</label>
+		<devNote>erin-4</devNote>
         <description>An once extinct species of flightless birds. It prefers to live in warmer regions and defense itself with is giant beak.</description>
         <statBases>
             <MoveSpeed>3.2</MoveSpeed>
             <MarketValue>550</MarketValue>
             <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+			<FilthRate>8</FilthRate>
         </statBases>
         <race>
             <herdAnimal>false</herdAnimal>
@@ -576,9 +583,29 @@
             <foodType>VegetarianRoughAnimal</foodType>
             <wildness>0.75</wildness>
 			<trainability>Intermediate</trainability>
+			<roamMtbDays>3</roamMtbDays>
             <lifeExpectancy>9</lifeExpectancy>
+			<useMeatFrom>Cassowary</useMeatFrom>
             <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
             <manhunterOnDamageChance>0</manhunterOnDamageChance>
+			  <lifeStageAges>
+				<li>
+				  <def>AnimalBabyTiny</def>
+				  <minAge>0</minAge>
+				  <soundWounded>Pawn_Chick_Call</soundWounded>
+				  <soundDeath>Pawn_Chick_Call</soundDeath>
+				  <soundCall>Pawn_Chick_Call</soundCall>
+				  <soundAngry>Pawn_Chick_Call</soundAngry>
+				</li>
+				<li>
+				  <def>AnimalJuvenile</def>
+				  <minAge>0.1</minAge>
+				</li>
+				<li>
+				  <def>AnimalAdult</def>
+				  <minAge>0.2222</minAge>
+				</li>
+			  </lifeStageAges>
         </race>
         <tools>
             <li>
@@ -637,7 +664,7 @@
             </li>
         </comps>
         <tradeTags>
-            <li>AnimalExotic</li>
+			<li>AnimalUncommon</li>
         </tradeTags>
     </ThingDef>
 
@@ -693,6 +720,7 @@
     <ThingDef ParentName="AnimalThingBase">
         <defName>RG-EAP_ArcticDrak</defName>
         <label>arctic drak</label>
+		<devNote>erin-5</devNote>
         <description>The result of genetic engineering and trying to revive long extinct animals, the polar drak is a large bird-like hybrid with long, white feathers and giant claws. It lives in colder regions and is mostly peaceful, preferring smaller prey.</description>
         <statBases>
             <MoveSpeed>4.6</MoveSpeed>
@@ -700,6 +728,7 @@
             <MarketValue>1850</MarketValue>
             <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
             <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+			<FilthRate>18</FilthRate>
         </statBases>
         <tools>
             <li>
@@ -782,7 +811,7 @@
             <manhunterOnTameFailChance>0.55</manhunterOnTameFailChance>
             <manhunterOnDamageChance>0.65</manhunterOnDamageChance>
 			<nameOnTameChance>1</nameOnTameChance>
-            <nuzzleMtbHours>275</nuzzleMtbHours>
+            <nuzzleMtbHours>75</nuzzleMtbHours>
             <litterSizeCurve>
                 <points>
                     <li>(0.99, 0)</li>
