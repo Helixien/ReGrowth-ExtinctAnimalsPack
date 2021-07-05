@@ -12,7 +12,7 @@
                     <xpath>/Defs/BiomeDef[defName="BorealForest"]/wildAnimals</xpath>
                     <value>
                         <RG-EAP_WoollyMammoth>0.5</RG-EAP_WoollyMammoth>
-						<RG-EAP_WoollyRhino>0.2</RG-EAP_WoollyRhino>
+						<RG-EAP_WoollyRhinoceros>0.2</RG-EAP_WoollyRhinoceros>
 						<RG-EAP_ArcticDrak>0.2</RG-EAP_ArcticDrak>
                     </value>
                 </li>
@@ -20,7 +20,7 @@
                     <xpath>/Defs/BiomeDef[defName="Tundra"]/wildAnimals</xpath>
                     <value>
                         <RG-EAP_WoollyMammoth>0.5</RG-EAP_WoollyMammoth>
-						<RG-EAP_WoollyRhino>0.5</RG-EAP_WoollyRhino>
+						<RG-EAP_WoollyRhinoceros>0.5</RG-EAP_WoollyRhinoceros>
 						<RG-EAP_ArcticDrak>0.3</RG-EAP_ArcticDrak>
                     </value>
                 </li>
@@ -33,7 +33,7 @@
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/BiomeDef[defName="IceSheet"]/wildAnimals</xpath>
                     <value>
-						<RG-EAP_WoollyRhino>0.1</RG-EAP_WoollyRhino>
+						<RG-EAP_WoollyRhinoceros>0.1</RG-EAP_WoollyRhinoceros>
 						<RG-EAP_ArcticDrak>0.1</RG-EAP_ArcticDrak>
                     </value>
                 </li>
@@ -58,7 +58,7 @@
                     <xpath>/Defs/BiomeDef[defName="RG-VIS_VulcanicIceSheet"]/wildAnimals</xpath>
                     <value>
                         <RG-EAP_WoollyMammoth>0.5</RG-EAP_WoollyMammoth>
-						<RG-EAP_WoollyRhino>0.2</RG-EAP_WoollyRhino>
+						<RG-EAP_WoollyRhinoceros>0.2</RG-EAP_WoollyRhinoceros>
 						<RG-EAP_ArcticDrak>0.2</RG-EAP_ArcticDrak>
                     </value>
                 </li>
