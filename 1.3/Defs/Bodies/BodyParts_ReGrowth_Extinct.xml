@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <BodyPartDef ParentName="ClawBase">
+        <defName>RG-EAP_FootClaw</defName>
+        <label>claw</label>
+        <labelShort>claw</labelShort>
+        <tags>
+            <li>MovingLimbDigit</li>
+        </tags>
+    </BodyPartDef>
+
+</Defs>

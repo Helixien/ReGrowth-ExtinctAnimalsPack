@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <BodyPartGroupDef>
+        <defName>RG-EAP_TailAttackTool</defName>
+        <label>tail</label>
+    </BodyPartGroupDef>
+
+    <BodyPartGroupDef>
+        <defName>RG-EAP_ArmClawAttackTool</defName>
+        <label>claws</label>
+    </BodyPartGroupDef>
+
+    <BodyPartGroupDef>
+        <defName>RG-EAP_FootClawAttackTool</defName>
+        <label>claws</label>
+    </BodyPartGroupDef>
+
+</Defs>
